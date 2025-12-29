@@ -39,6 +39,8 @@ Route::middleware('auth:sanctum')->group(function () {
     // --- USER & LOGOUT (CODE LAMA LU) ---
     Route::get('/user', [AuthController::class, 'user']);
     Route::post('/logout', [AuthController::class, 'logout']);
+    Route::put('/profile', [AuthController::class, 'updateProfile']); // <--- BARU: Update Profile
+    Route::put('/password', [AuthController::class, 'changePassword']); // <--- BARU: Ganti Password
 
     // --- KERANJANG / CART (CODE LAMA LU - GUA PERTAHANIN) ---
     // Gua balikin persis kayak logic lu di web.php tapi tanpa prefix 'api' lagi
