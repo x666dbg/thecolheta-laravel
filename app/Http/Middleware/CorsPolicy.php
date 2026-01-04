@@ -16,6 +16,7 @@ class CorsPolicy
             'https://thecolheta.com',
             'https://www.thecolheta.com', // Jaga-jaga jika pake www
             'http://localhost:5173',      // Biar local dev lu tetap jalan
+            'http://localhost:5174',      // Port alternatif jika 5173 sibuk
         ];
         
         // Ambil domain asal (origin) dari request browser
